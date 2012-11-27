@@ -1,0 +1,37 @@
+{% load i18n %}
+
+<div id="django-languageselect-container" style="position: relative; display: inline;">
+    <a href="#" id="django-languageselect-trigger">{{ LANGUAGE_CODE|language_name_local }}</a>
+    <script language="javascript" type="text/javascript">
+        <!--
+        document.getElementById("django-languageselect-trigger").onclick = function() {
+            var layer = document.getElementById("django-languageselect-layer");
+
+            if (layer.style.display == "block") {
+                layer.style.display = "none";
+            }
+            else {
+                layer.style.display = "block";
+            }
+            return false;
+        };
+        // -->
+    </script>
+
+    <div style="display: none; position: absolute; top: 20px; left: 0;" id="django-languageselect-layer">
+        {% get_available_languages as LANGUAGES %}
+        <ul class="languageselect">
+            {% for lang in LANGUAGES %}
+            <li>
+                {% if LANGUAGE_CODE != lang.0 %}
+                <a href="{% url languageselect_index %}?language={{ lang.0 }}&next={{ next }}">
+                    {{ lang.0|language_name_local }}
+                </a>
+                {% else %}
+                {{ lang.0|language_name_local }}
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

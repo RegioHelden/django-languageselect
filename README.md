@@ -1,4 +1,16 @@
-django-languageselect
-=====================
+# django-languageselect
 
-Language select as a simple custom template tag
+Simple language select as custom template tag.
+Requires "django.core.context_processors.request" in TEMPLATE_CONTEXT_PROCESSORS.
+
+Usage:
+```django
+{% languageselect %}
+```
+
+## Routes
+
+The only url provided by this application is "languageselect_index".
+Required GET-parameter is "language", optional GET-parameter is "next".
+Next contains the named url to redirect after the language change. This
+is pre-filled with the current page url.
