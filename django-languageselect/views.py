@@ -4,7 +4,7 @@ from django.views.generic import View
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.utils import translation
-from languageselect.forms import LanguageCodeForm
+import forms
 
 
 class IndexView(View):
@@ -18,7 +18,7 @@ class IndexView(View):
 
 		# process language change
 		if request.GET:
-			form = LanguageCodeForm(data=request.GET)
+			form = forms.LanguageCodeForm(data=request.GET)
 
 			if form.is_valid():
 				language = form.cleaned_data['language']

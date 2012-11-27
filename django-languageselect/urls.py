@@ -1,8 +1,8 @@
 # -*- coding: UTF-8 -*-
 
-from django.conf.urls.defaults import *
-from languageselect.views import IndexView
+from django.conf.urls import patterns, url
+import views
 
 urlpatterns = patterns('',
-	url(r"^/?", IndexView.as_view(), name="languageselect_index"),
+	url(r"^/?", views.IndexView.as_view(), name="languageselect_index"),
 )
