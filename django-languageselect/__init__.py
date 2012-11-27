@@ -1,1 +1,1 @@
-__author__ = 'loci'
+# -*- coding: UTF-8 -*-

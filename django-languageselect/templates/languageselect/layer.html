@@ -22,15 +22,15 @@
         {% get_available_languages as LANGUAGES %}
         <ul class="languageselect">
             {% for lang in LANGUAGES %}
-            <li>
-                {% if LANGUAGE_CODE != lang.0 %}
-                <a href="{% url languageselect_index %}?language={{ lang.0 }}&next={{ next }}">
-                    {{ lang.0|language_name_local }}
-                </a>
-                {% else %}
-                {{ lang.0|language_name_local }}
-                {% endif %}
-            </li>
+                <li>
+                    {% if LANGUAGE_CODE != lang.0 %}
+                        <a href="{% url languageselect_index %}?language={{ lang.0 }}&next={{ next }}">
+                            {{ lang.0|language_name_local }}
+                        </a>
+                    {% else %}
+                        {{ lang.0|language_name_local }}
+                    {% endif %}
+                </li>
             {% endfor %}
         </ul>
     </div>

@@ -8,24 +8,28 @@ import forms
 
 
 class IndexView(View):
-	def get(self, request):
-		# determine redirect
-		next = "index"
-		if "next" in request.GET:
-			next = request.GET.get("next")
+    def get(self, request):
+        next = "index"
+        if "next" in request.GET:
+            next = request.GET.get("next")
 
-		response = HttpResponseRedirect(next)
+        response = HttpResponseRedirect(next)
 
-		# process language change
-		if request.GET:
-			form = forms.LanguageCodeForm(data=request.GET)
+        if not request.GET:
+            return response
 
-			if form.is_valid():
-				language = form.cleaned_data['language']
-				if hasattr(request, "session"):
-					request.session["django_language"] = language
-				else:
-					response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language)
-				translation.activate(language)
+        form = forms.LanguageCodeForm(data=request.GET)
+        if not form.is_valid():
+            return response
 
-		return response
+        language = form.cleaned_data['language']
+        if not translation.check_for_language(language):
+            return response
+
+        if hasattr(request, "session"):
+            request.session["django_language"] = language
+        else:
+            response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language)
+        translation.activate(language)
+
+        return response
