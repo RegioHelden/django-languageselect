@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 setup(
     name='django-languageselect',
     packages=find_packages(),
-    version='1.0',
+    version='0.1',
     description='Simple language select as custom template tag',
     author='RegioHelden GmbH',
     author_email='opensource@regiohelden.de',
