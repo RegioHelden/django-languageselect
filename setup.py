@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 setup(
     name='django-languageselect',
     packages=find_packages(),
-    version='0.1',
+    version='0.1.1',
     description='Simple language select as custom template tag',
     author='RegioHelden GmbH',
     author_email='opensource@regiohelden.de',
@@ -19,7 +19,7 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-        "Topic :: Software Development :: Internet",
+        "Topic :: Software Development",
     ],
     install_requires=[
         "Django>=1.3",
