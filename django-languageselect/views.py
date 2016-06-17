@@ -9,7 +9,7 @@ import forms
 
 class IndexView(View):
     def get(self, request):
-        next = "index"
+        next = "/"
         if "next" in request.GET:
             next = request.GET.get("next")
 
@@ -27,7 +27,7 @@ class IndexView(View):
             return response
 
         if hasattr(request, "session"):
-            request.session["django_language"] = language
+            request.session[translation.LANGUAGE_SESSION_KEY] = language
         else:
             response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language)
         translation.activate(language)
