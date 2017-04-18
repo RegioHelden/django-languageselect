@@ -1,2 +1,2 @@
 include README.md
-recursive-include django-languageselect/templates *
+recursive-include django_languageselect/templates *

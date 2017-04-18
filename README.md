@@ -1,11 +1,11 @@
-# django-languageselect
+# django_languageselect
 
 Simple language select as custom template tag.
 
 ## Requirements
 * "django.middleware.locale.LocaleMiddleware" in MIDDLEWARE_CLASSES
 * "django.core.context_processors.request" in TEMPLATE_CONTEXT_PROCESSORS
-* Add 'django-languageselect', to INSTALLED_APPS
+* Add 'django_languageselect', to INSTALLED_APPS
 
 Usage:
 ```django
@@ -25,5 +25,7 @@ This parameter is pre-filled with the current page url.
 Feel free to use your own template, just add languageselect/layer.html
 
 ## Changelog
+
+0.1.4 Rename package to django_languageselect (backwards incompatible) to be able to import the module
 
 0.1.3 Fix session key to store language, Django 1.9 compatibility
