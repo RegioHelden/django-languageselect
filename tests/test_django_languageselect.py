@@ -2,10 +2,14 @@
 # -*- coding: utf-8 -*-
 
 from django.conf import settings
-from django.test import TestCase, Client
-from django.urls import reverse
-from django.utils import translation
 from django.template import Template, Context
+from django.test import TestCase, Client
+from django.utils import translation
+
+try:
+    from django.urls import reverse
+except ImportError:
+    from django.core.urlresolvers import reverse
 
 if hasattr(settings, 'MIDDLEWARE'):
     MIDDELWARE_SETTINGS_NAME = 'MIDDLEWARE'
@@ -19,22 +23,22 @@ class TestDjangoLanguageSelect(TestCase):
 
     def test_change_language_cookie(self):
         response = self.client.get(reverse('languageselect_index'), data={
-                                   'language': 'de'}, follow=False)
+            'language': 'de'}, follow=False)
         self.assertEqual(
             response.client.cookies[settings.LANGUAGE_COOKIE_NAME].value, 'de')
         self.assertEqual(response.status_code, 302)
         response = self.client.get(reverse('languageselect_index'), data={
-                                   'language': 'en'}, follow=False)
+            'language': 'en'}, follow=False)
         self.assertEqual(
             response.client.cookies[settings.LANGUAGE_COOKIE_NAME].value, 'en')
         self.assertEqual(response.status_code, 302)
 
     def test_change_language_session(self):
-        with self.modify_settings(**{MIDDELWARE_SETTINGS_NAME:{
+        with self.modify_settings(**{MIDDELWARE_SETTINGS_NAME: {
             'append': 'django.contrib.sessions.middleware.SessionMiddleware',
         }}):
             response = self.client.get(reverse('languageselect_index'), data={
-                                       'language': 'de'}, follow=False)
+                'language': 'de'}, follow=False)
             self.assertTrue(
                 settings.LANGUAGE_COOKIE_NAME not in response.client.cookies)
             self.assertEqual(
@@ -43,7 +47,7 @@ class TestDjangoLanguageSelect(TestCase):
             )
 
             response = self.client.get(reverse('languageselect_index'), data={
-                                       'language': 'fr'}, follow=False)
+                'language': 'fr'}, follow=False)
             self.assertEqual(
                 response.client.session[translation.LANGUAGE_SESSION_KEY],
                 'fr'
@@ -51,7 +55,7 @@ class TestDjangoLanguageSelect(TestCase):
 
     def test_wrong_language_does_nothing(self):
         response = self.client.get(reverse('languageselect_index'), data={
-                                   'language': 'dsdsdsd'}, follow=False)
+            'language': 'dsdsdsd'}, follow=False)
         self.assertTrue(
             settings.LANGUAGE_COOKIE_NAME not in response.client.cookies)
         self.assertEqual(response.status_code, 302)
