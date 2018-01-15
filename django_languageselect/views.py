@@ -4,7 +4,8 @@ from django.views.generic import View
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.utils import translation
-import forms
+
+from . import forms
 
 
 class IndexView(View):
@@ -23,8 +24,6 @@ class IndexView(View):
             return response
 
         language = form.cleaned_data['language']
-        if not translation.check_for_language(language):
-            return response
 
         if hasattr(request, "session"):
             request.session[translation.LANGUAGE_SESSION_KEY] = language

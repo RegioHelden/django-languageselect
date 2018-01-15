@@ -1,0 +1,6 @@
+[report]
+exclude_lines = def __str__
+omit =
+    ../*migrations*
+    *site-packages*
+    *distutils*

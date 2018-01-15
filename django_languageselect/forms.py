@@ -12,4 +12,5 @@ class LanguageCodeValidator(object):
 
 
 class LanguageCodeForm(forms.Form):
-    language = forms.CharField(max_length=5, validators=[LanguageCodeValidator])
+    language = forms.CharField(max_length=5,
+                               validators=[LanguageCodeValidator])

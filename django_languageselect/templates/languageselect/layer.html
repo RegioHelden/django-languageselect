@@ -1,7 +1,9 @@
 {% load i18n %}
 
 <div id="django-languageselect-container" style="position: relative; display: inline;">
-    <a href="#" id="django-languageselect-trigger">{{ LANGUAGE_CODE|language_name_local }}</a>
+    {% if LANGUAGE_CODE %}
+        <a href="#" id="django-languageselect-trigger">{{ LANGUAGE_CODE|language_name_local }}</a>
+    {% endif %}
     <script language="javascript" type="text/javascript">
         <!--
         document.getElementById("django-languageselect-trigger").onclick = function() {
