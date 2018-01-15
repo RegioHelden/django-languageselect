@@ -1,3 +1,3 @@
 # -*- coding: UTF-8 -*-
 __author__ = """RegioHelden GmbH"""
-__version__ = '0.1.4'
+__version__ = '0.1.5'
