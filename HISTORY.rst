@@ -2,6 +2,12 @@
 History
 =======
 
+0.1.5 (2018-01-15)
+------------------
+
+* Add support for python 3 and Django 2, impleneting tests in travis ci
+
+
 0.1.4 (2017-04-18)
 ------------------
 
