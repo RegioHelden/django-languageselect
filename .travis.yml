@@ -10,7 +10,7 @@ deploy:
       RGRSenNUc1dFK1JTZEh2d1JXUkpOeXVuTXBtckJGTjZnZHdYQmRxYjlHZ1lYTDFJeDI3SWN1bWFv
       PQ==
   on:
-    condition: $TOX_ENV = py27-django-111
+    condition: "$TOX_ENV = py27-django-111"
     repo: RegioHelden/django-languageselect
     tags: true
 
