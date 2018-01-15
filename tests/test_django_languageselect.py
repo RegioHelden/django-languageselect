@@ -7,14 +7,14 @@ from django.test import TestCase, Client
 from django.utils import translation
 
 try:
-    from django.urls import reverse
-except ImportError:
     from django.core.urlresolvers import reverse
+except ImportError:
+    from django.urls import reverse
 
-if hasattr(settings, 'MIDDLEWARE'):
-    MIDDELWARE_SETTINGS_NAME = 'MIDDLEWARE'
-else:
+if hasattr(settings, 'MIDDLEWARE_CLASSES'):
     MIDDELWARE_SETTINGS_NAME = 'MIDDLEWARE_CLASSES'
+else:
+    MIDDELWARE_SETTINGS_NAME = 'MIDDLEWARE'
 
 
 class TestDjangoLanguageSelect(TestCase):
