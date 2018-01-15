@@ -56,7 +56,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'django_languageselect'
-copyright = u"2018, Mounir Messelmeni"
+copyright = u"2018, RegioHelden GmbH"
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout

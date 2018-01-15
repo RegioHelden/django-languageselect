@@ -7,6 +7,11 @@ from django.urls import reverse
 from django.utils import translation
 from django.template import Template, Context
 
+if hasattr(settings, 'MIDDLEWARE'):
+    MIDDELWARE_SETTINGS_NAME = 'MIDDLEWARE'
+else:
+    MIDDELWARE_SETTINGS_NAME = 'MIDDLEWARE_CLASSES'
+
 
 class TestDjangoLanguageSelect(TestCase):
     def setUp(self):
@@ -25,9 +30,9 @@ class TestDjangoLanguageSelect(TestCase):
         self.assertEqual(response.status_code, 302)
 
     def test_change_language_session(self):
-        with self.modify_settings(MIDDLEWARE={
+        with self.modify_settings(**{MIDDELWARE_SETTINGS_NAME:{
             'append': 'django.contrib.sessions.middleware.SessionMiddleware',
-        }):
+        }}):
             response = self.client.get(reverse('languageselect_index'), data={
                                        'language': 'de'}, follow=False)
             self.assertTrue(
