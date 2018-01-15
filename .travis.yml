@@ -13,23 +13,27 @@ deploy:
     python: 2.7
     repo: RegioHelden/django-languageselect
     tags: true
+
 env:
-- TOX_ENV=py35-django-18
-- TOX_ENV=py34-django-18
-- TOX_ENV=py27-django-18
-- TOX_ENV=py35-django-19
-- TOX_ENV=py34-django-19
-- TOX_ENV=py27-django-19
-- TOX_ENV=py35-django-110
-- TOX_ENV=py34-django-110
-- TOX_ENV=py27-django-110
-- TOX_ENV=py36-django-111
-- TOX_ENV=py35-django-111
-- TOX_ENV=py27-django-111
-- TOX_ENV=py36-django-120
-- TOX_ENV=py35-django-120
+  - TOX_ENV=py35-django-18
+  - TOX_ENV=py34-django-18
+  - TOX_ENV=py27-django-18
+  - TOX_ENV=py35-django-19
+  - TOX_ENV=py34-django-19
+  - TOX_ENV=py27-django-19
+  - TOX_ENV=py35-django-110
+  - TOX_ENV=py34-django-110
+  - TOX_ENV=py27-django-110
+  - TOX_ENV=py36-django-111
+  - TOX_ENV=py35-django-111
+  - TOX_ENV=py27-django-111
+  - TOX_ENV=py36-django-120
+  - TOX_ENV=py35-django-120
+
 install: pip install -U tox-travis
+
 language: python
+
 python:
-- 3.5
-script: tox
+  - 3.5
+script: tox -e $TOX_ENV
