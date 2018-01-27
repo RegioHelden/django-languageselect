@@ -21,7 +21,7 @@ test_requirements = []
 
 setup(
     name='django_languageselect',
-    version='0.1.5',
+    version='0.1.6',
     description="Simple language select as custom template tag",
     long_description=readme + '\n\n' + history,
     author="Mounir Messelmeni",
