@@ -2,6 +2,11 @@
 History
 =======
 
+0.1.6 (2018-01-27)
+------------------
+
+* Add missing folders and modules from package
+
 0.1.5 (2018-01-15)
 ------------------
 
