@@ -12,7 +12,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Django>=1.8',
+    'Django>=1.11.20',
 ]
 
 setup_requirements = []

@@ -16,15 +16,21 @@ deploy:
     repo: RegioHelden/django-languageselect
     tags: true
 env:
-- TOX_ENV=py35-django-110
-- TOX_ENV=py34-django-110
-- TOX_ENV=py27-django-110
-- TOX_ENV=py35-django-111
-- TOX_ENV=py34-django-111
 - TOX_ENV=py27-django-111
-- TOX_ENV=py35-django-120
-- TOX_ENV=py34-django-120
+- TOX_ENV=py34-django-111
+- TOX_ENV=py35-django-111
+- TOX_ENV=py36-django-111
+- TOX_ENV=py37-django-111
+- TOX_ENV=py34-django-200
+- TOX_ENV=py35-django-200
+- TOX_ENV=py36-django-200
+- TOX_ENV=py37-django-200
+- TOX_ENV=py34-django-210
+- TOX_ENV=py35-django-210
+- TOX_ENV=py36-django-210
+- TOX_ENV=py37-django-210
 install: pip install -U tox-travis
+dist: xenial
 language: python
 python:
 - 3.5
