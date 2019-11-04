@@ -13,7 +13,6 @@ env:
   - TOXENV=py-django-200
   - TOXENV=py-django-210
   - TOXENV=py-django-220
-  - TOXENV=py-django-300
 
 install: pip install -U tox-travis
 
@@ -30,6 +29,6 @@ deploy:
       UkVzWXZNNnBRV1l5Rmh6L0FmcGVuVmY1Z1VQL1o1M0lObHlRRHdPN2RMaEZZVTZwdGNoNW5ZUHZn
       PQ==
   true:
-    condition: $TOX_ENV = py37-django-111
+    condition: $TOX_ENV = py37-django-200
     repo: RegioHelden/django-languageselect
     tags: true

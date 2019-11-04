@@ -12,6 +12,12 @@ except ImportError:
     from django.urls import reverse
 
 
+if hasattr(settings, 'MIDDLEWARE_CLASSES'):
+    MIDDELWARE_SETTINGS_NAME = 'MIDDLEWARE_CLASSES'
+else:
+    MIDDELWARE_SETTINGS_NAME = 'MIDDLEWARE'
+
+
 class TestDjangoLanguageSelect(TestCase):
     def setUp(self):
         self.client = Client()
@@ -29,7 +35,7 @@ class TestDjangoLanguageSelect(TestCase):
         self.assertEqual(response.status_code, 302)
 
     def test_change_language_session(self):
-        with self.modify_settings(**{'MIDDLEWARE': {
+        with self.modify_settings(**{MIDDELWARE_SETTINGS_NAME: {
             'append': 'django.contrib.sessions.middleware.SessionMiddleware',
         }}):
             response = self.client.get(reverse('languageselect_index'), data={

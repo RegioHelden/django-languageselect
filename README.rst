@@ -20,8 +20,8 @@ Simple language select as custom template tag
 Requirements
 ============
 
-- "django.middleware.locale.LocaleMiddleware" in MIDDLEWARE
-- "django.core.context_processors.request" in TEMPLATES['OPTIONS']['context_processors']
+- "django.middleware.locale.LocaleMiddleware" in MIDDLEWARE_CLASSES / MIDDLEWARE
+- "django.core.context_processors.request" in TEMPLATE_CONTEXT_PROCESSORS / TEMPLATES['OPTIONS']['context_processors']
 - Add 'django_languageselect', to INSTALLED_APPS
 
 Usage:
