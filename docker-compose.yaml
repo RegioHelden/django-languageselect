@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  python:
+    build: .
+    user: app
+    volumes:
+      - .:/app
+    environment:
+      IPYTHONDIR: /app/.ipython
+      HISTFILE: /app/.bash_history
+    restart: unless-stopped
+    command: bash -c "flake8 django_languageselect tests && python manage.py test"

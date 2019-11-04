@@ -2,6 +2,13 @@
 History
 =======
 
+1.0.0 (2019-11-04)
+------------------
+
+* Update packages
+* Remove Python 2 support
+* Add docker container to run tests locally
+
 0.1.6 (2018-01-27)
 ------------------
 
