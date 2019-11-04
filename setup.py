@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """The setup script."""
+import os
+import re
 
 from setuptools import setup, find_packages
 
