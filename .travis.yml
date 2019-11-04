@@ -12,20 +12,31 @@ deploy:
       UkVzWXZNNnBRV1l5Rmh6L0FmcGVuVmY1Z1VQL1o1M0lObHlRRHdPN2RMaEZZVTZwdGNoNW5ZUHZn
       PQ==
   true:
-    condition: $TOX_ENV = py27-django-111
+    condition: $TOX_ENV = py37-django-111
     repo: RegioHelden/django-languageselect
     tags: true
 env:
-- TOX_ENV=py27-django-111
 - TOX_ENV=py36-django-111
 - TOX_ENV=py37-django-111
+- TOX_ENV=py38-django-111
 - TOX_ENV=py36-django-200
 - TOX_ENV=py37-django-200
+- TOX_ENV=py38-django-200
 - TOX_ENV=py36-django-210
 - TOX_ENV=py37-django-210
+- TOX_ENV=py38-django-210
+- TOX_ENV=py36-django-220
+- TOX_ENV=py37-django-220
+- TOX_ENV=py38-django-220
+- TOX_ENV=py36-django-300
+- TOX_ENV=py37-django-300
+- TOX_ENV=py38-django-300
 install: pip install -U tox-travis
-dist: xenial
+dist: bionic
 language: python
 python:
-- 3.7
+  - "3.5"
+  - "3.6"
+  - "3.7"
+
 script: tox -e $TOX_ENV
