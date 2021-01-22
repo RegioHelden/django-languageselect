@@ -24,13 +24,14 @@ jobs:
       run: |
         pip install -q "Django${{ matrix.django-version }}"
         pip install .
-        pip install flake8
+        pip install -r requirements-test.txt
         
     - name: Lint with flake8
-      run: make lint
+      run: flake8 --show-source
 
     - name: Test
-      run: make test
+      run: python manage.py test
+
 
   publish:
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
