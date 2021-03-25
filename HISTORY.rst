@@ -2,6 +2,13 @@
 History
 =======
 
+2.0.0 (2021-03-25)
+------------------
+
+* Update packages
+* Update Docker env
+* Remove support for Django < 2.2
+
 1.0.0 (2019-11-04)
 ------------------
 
