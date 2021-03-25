@@ -43,19 +43,19 @@ Feel free to use your own template, just add languageselect/layer.html
 * Documentation: https://django-languageselect.readthedocs.io.
 
 Tests
------
+=====
 
 Tests will be automatically run by travis on commit to master.
 
 They can also be executed locally using docker-compose by running ```docker-compose up```
 
 Requirements upgrades
----------------------
+=====================
 
 Check for upgradeable packages by running ```docker-compose run --rm python pip-check```
 
 Making a new release
---------------------
+====================
 
 bumpversion_ is used to manage releases.
 

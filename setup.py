@@ -38,6 +38,7 @@ setup(
     version=get_version('django_languageselect', '__init__.py'),
     description='Simple language select as custom template tag',
     long_description=readme + '\n\n' + history,
+    long_description_content_type='text/x-rst',
     author='RegioHelden GmbH',
     author_email='entwicklung@regiohelden.de',
     url='https://github.com/RegioHelden/django-languageselect',
