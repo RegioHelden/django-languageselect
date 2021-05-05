@@ -1,5 +1,3 @@
-# -*- coding: UTF-8 -*-
-
 from django.views.generic import View
 from django.conf import settings
 from django.http import HttpResponseRedirect

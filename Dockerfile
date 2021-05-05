@@ -30,7 +30,7 @@ ENV PATH /home/app/venv/bin:${PATH}
 RUN python3 -m venv ~/venv && \
     pip install --upgrade pip && \
     pip install wheel && \
-    pip install Django==2.2.19 && \
+    pip install Django==3.2.1 && \
     pip install -r requirements-test.txt
 
 ADD . /app/

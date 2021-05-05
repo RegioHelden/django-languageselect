@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 """The setup script."""
 import os
@@ -26,7 +25,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Django>=2.2.19',
+    'Django>=3.0',
 ]
 
 setup_requirements = []

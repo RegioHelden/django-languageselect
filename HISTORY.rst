@@ -2,6 +2,14 @@
 History
 =======
 
+3.0.0 (2021-05-05)
+==================
+
+* Remove support for Django 2.x
+* Remove utf 8 headers as all Python 3 files must be unicode anyways
+* Fix CI badge in readme
+* Modernize build and test environment
+
 2.0.2 (2021-05-05)
 ==================
 
