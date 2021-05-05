@@ -2,6 +2,13 @@
 History
 =======
 
+2.0.2 (2021-05-05)
+==================
+
+* Remove setting language in session as this was depreacted since Django 2.x and is broken with Django 3.x
+* Add tests for Django 3.2
+* Remove old python 2 and Django compatibility code
+
 2.0.1 (2021-03-25)
 ==================
 

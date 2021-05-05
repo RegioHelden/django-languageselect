@@ -1,9 +1,4 @@
-# -*- coding: UTF-8 -*-
-try:
-    from django.urls import re_path  # noqa
-except ImportError:
-    from django.conf.urls import url  # noqa
-    re_path = url
+from django.urls import re_path
 
 from . import views
 

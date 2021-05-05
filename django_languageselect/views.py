@@ -3,7 +3,6 @@
 from django.views.generic import View
 from django.conf import settings
 from django.http import HttpResponseRedirect
-from django.utils import translation
 
 from . import forms
 
@@ -23,12 +22,17 @@ class IndexView(View):
         if not form.is_valid():
             return response
 
-        language = form.cleaned_data['language']
+        language = form.cleaned_data["language"]
 
-        if hasattr(request, "session"):
-            request.session[translation.LANGUAGE_SESSION_KEY] = language
-        else:
-            response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language)
-        translation.activate(language)
+        response.set_cookie(
+            settings.LANGUAGE_COOKIE_NAME,
+            language,
+            max_age=settings.LANGUAGE_COOKIE_AGE,
+            path=settings.LANGUAGE_COOKIE_PATH,
+            domain=settings.LANGUAGE_COOKIE_DOMAIN,
+            secure=settings.LANGUAGE_COOKIE_SECURE,
+            httponly=settings.LANGUAGE_COOKIE_HTTPONLY,
+            samesite=settings.LANGUAGE_COOKIE_SAMESITE,
+        )
 
         return response
