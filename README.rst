@@ -6,7 +6,7 @@ django_languageselect
 .. image:: https://img.shields.io/pypi/v/django_languageselect.svg
         :target: https://pypi.python.org/pypi/django_languageselect
 
-.. image:: https://github.com/RegioHelden/django-languageselect/workflows/Test/badge.svg
+.. image:: https://github.com/RegioHelden/django-languageselect/actions/workflows/build.yml/badge.svg
         :target: https://github.com/RegioHelden/django-languageselect/actions
 
 .. image:: https://readthedocs.org/projects/django-languageselect/badge/?version=latest
