@@ -2,14 +2,14 @@
 History
 =======
 
-4.0.1 (2022-01-02)
+4.0.1 (2023-01-02)
 ==================
 
 * Remove support for Django < 3.2
 * Remove support for Python < 3.8
 * Modernize build and test environment
 
-4.0.0 (2022-01-02)
+4.0.0 (2023-01-02)
 ==================
 
 Not released to due an issue with the deploy action
