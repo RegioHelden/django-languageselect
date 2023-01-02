@@ -47,12 +47,12 @@ Tests
 
 Tests will be automatically run by travis on commit to master.
 
-They can also be executed locally using docker-compose by running ```docker-compose up```
+They can also be executed locally using docker-compose by running `docker-compose up`
 
 Requirements upgrades
 =====================
 
-Check for upgradeable packages by running ```docker-compose run --rm python pip-check```
+Check for upgradeable packages by running `docker-compose run --rm python pip-check`
 
 Making a new release
 ====================
@@ -61,6 +61,6 @@ bumpversion_ is used to manage releases.
 
 .. _bumpversion: https://github.com/peritus/bumpversion
 
-Add your changes to the HISTORY_ and run ```docker-compose run --rm python bumpversion <major|minor|patch>```, then push (including tags)
+Add your changes to the HISTORY_ and run `docker-compose run --rm python bumpversion <major|minor|patch>`, then push (including tags)
 
 .. _HISTORY: ./HISTORY.rst
