@@ -1,6 +1,6 @@
 bumpversion==0.6.0
 coverage==7.0.1
-cryptography==39.0.0
+cryptography==39.0.1
 flake8==6.0.0
 pip-check==2.8.1
 PyYAML==6.0
