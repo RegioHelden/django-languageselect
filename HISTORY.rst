@@ -2,6 +2,13 @@
 History
 =======
 
+Unreleased
+==========
+
+* Remove support for Python < 3.9
+* Remove support for Django 4.0
+* Modernize build and test environment
+
 4.0.1 (2023-01-02)
 ==================
 
