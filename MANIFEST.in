@@ -1,8 +1,7 @@
-include AUTHORS.rst
-include CONTRIBUTING.rst
-include HISTORY.rst
+include AUTHORS.md
+include HISTORY.md
 include LICENSE
-include README.rst
+include README.md
 
 recursive-include tests *
 recursive-include django_languageselect/templates *
@@ -10,4 +9,4 @@ recursive-include django_languageselect/templatetags *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 
-recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
+recursive-include docs *.md conf.py Makefile make.bat *.jpg *.png *.gif
