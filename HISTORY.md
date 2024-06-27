@@ -1,12 +1,17 @@
 # History
 
-## 5.0.0 (2024-06-27)
+## 5.0.1 (2024-06-27)
+
 * Remove support for Python below 3.10
 * Remove support for Django below 4.2
 * Add support for Django 5.0
 * Add support for Python 3.11
 * Add support for Python 3.12
 * Modernize build and test environment
+
+## 5.0.0 (2024-06-27)
+
+Not released to due an issue with the deploy action
 
 ## 4.0.1 (2023-01-02)
 
