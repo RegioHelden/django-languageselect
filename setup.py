@@ -25,7 +25,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Django>=3.2',
+    'Django>=4.2',
 ]
 
 setup_requirements = []
@@ -56,6 +56,7 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
     ],
     test_suite='tests',
     tests_require=test_requirements,

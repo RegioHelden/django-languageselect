@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 
 ENV PYTHONUNBUFFERED 1
 ENV LC_ALL=C.UTF-8
@@ -29,9 +29,8 @@ ENV PATH /home/app/venv/bin:${PATH}
 
 RUN python3 -m venv ~/venv && \
     pip install --upgrade pip && \
-    pip install wheel && \
-    pip install Django==3.2.1 && \
-    pip install -r requirements-test.txt
+    pip install -r requirements-test.txt && \
+    pip install Django==5.0.6
 
 ADD . /app/
 

@@ -9,13 +9,8 @@ django_languageselect
 .. image:: https://github.com/RegioHelden/django-languageselect/actions/workflows/build.yml/badge.svg
         :target: https://github.com/RegioHelden/django-languageselect/actions
 
-.. image:: https://readthedocs.org/projects/django-languageselect/badge/?version=latest
-        :target: https://django-languageselect.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
 
 Simple language select as custom template tag
-
 
 Requirements
 ============
@@ -27,8 +22,31 @@ Requirements
 Usage:
 ======
 
+To use django_languageselect in a project, add it to `INSTALLED_APP`
+
+```python
+INSTALLED_APP  = [
+    *INSTALLED_APP,
+    'django_languageselect',
+]
+```
+
+Add this to your urls.py
+
+```python
+urlpatterns = [
+    *urlpatterns,
+    url(r'^languageselect/', include('django_languageselect.urls')),
+]
+```
+
+Use the languageselect tag where you which to show languages list:
+
+```jinja
 {% load languageselect %}
+
 {% languageselect %}
+```
 
 Routes:
 =======
@@ -37,7 +55,6 @@ The only url provided by this application is "languageselect_index". Required GE
 Customization
 
 Feel free to use your own template, just add languageselect/layer.html
-
 
 * Free software: MIT license
 * Documentation: https://django-languageselect.readthedocs.io.
@@ -48,11 +65,6 @@ Tests
 Tests will be automatically run by travis on commit to master.
 
 They can also be executed locally using docker-compose by running `docker-compose up`
-
-Requirements upgrades
-=====================
-
-Check for upgradeable packages by running `docker-compose run --rm python pip-check`
 
 Making a new release
 ====================

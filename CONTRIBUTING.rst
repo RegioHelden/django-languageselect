@@ -39,8 +39,7 @@ Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
 django_languageselect could always use more documentation, whether as part of the
-official django_languageselect docs, in docstrings, or even on the web in blog posts,
-articles, and such.
+README, in docstrings, or even on the web in blog posts, articles, and such.
 
 Submit Feedback
 ~~~~~~~~~~~~~~~
@@ -98,17 +97,14 @@ Pull Request Guidelines
 Before you submit a pull request, check that it meets these guidelines:
 
 1. The pull request should include tests.
-2. If the pull request adds functionality, the docs should be updated. Put
-   your new functionality into a function with a docstring, and add the
-   feature to the list in README.rst.
-3. The pull request should work for Python 2.7, 3.6, 3.7 and for PyPy. Check
-   https://travis-ci.org/RegioHelden/django-languageselect/pull_requests
-   and make sure that the tests pass for all supported Python versions.
+2. If the pull request adds functionality, the README should be updated..
+3. The PR must pass the CI tests.
 
 Tips
 ----
 
 To run a subset of tests::
 
-
-    $ python -m unittest tests.test_django_languageselect
+```bash
+    python -m unittest tests.test_django_languageselect
+```
