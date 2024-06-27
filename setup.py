@@ -18,7 +18,7 @@ def get_version(*file_paths):
     raise RuntimeError('Unable to find version string.')
 
 
-with open('README.rst') as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
 
 with open('HISTORY.rst') as history_file:
@@ -37,7 +37,7 @@ setup(
     version=get_version('django_languageselect', '__init__.py'),
     description='Simple language select as custom template tag',
     long_description=readme + '\n\n' + history,
-    long_description_content_type='text/x-rst',
+    long_description_content_type='text/markdown',
     author='RegioHelden GmbH',
     author_email='entwicklung@regiohelden.de',
     url='https://github.com/RegioHelden/django-languageselect',
