@@ -31,12 +31,16 @@ jobs:
       fail-fast: false
       matrix:
         python-version:
-          - "3.10"
           - "3.11"
           - "3.12"
+          - "3.13"
         django:
           - "4.2"
-          - "5.0"
+          - "5.1"
+          - "5.2"
+        exclude:
+          - python-version: "3.13"
+            django: "4.2"
 
     steps:
       - uses: actions/checkout@v4
