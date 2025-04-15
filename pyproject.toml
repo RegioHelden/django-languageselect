@@ -1,6 +1,6 @@
 [project]
 name = "django_languageselect"
-version = "5.0.1"
+version = "6.0.0"
 license = "MIT"
 requires-python = ">=3.11"
 description = "Simple language select as custom template tag"
