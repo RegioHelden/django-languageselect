@@ -2,7 +2,7 @@
 name = "django_languageselect"
 version = "5.0.1"
 license = "MIT"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 description = "Simple language select as custom template tag"
 readme = "README.md"
 keywords = ["django", "language", "select"]
@@ -19,9 +19,9 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
