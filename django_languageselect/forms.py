@@ -1,6 +1,6 @@
 from django import forms
-from django.utils.translation import check_for_language
 from django.core.exceptions import ValidationError
+from django.utils.translation import check_for_language
 
 
 class LanguageCodeValidator:

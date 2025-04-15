@@ -1,17 +1,17 @@
-from django.views.generic import View
 from django.conf import settings
 from django.http import HttpResponseRedirect
+from django.views.generic import View
 
 from . import forms
 
 
 class IndexView(View):
     def get(self, request):
-        next = "/"
+        redirect_path = "/"
         if "next" in request.GET:
-            next = request.GET.get("next")
+            redirect_path = request.GET.get("next")
 
-        response = HttpResponseRedirect(next)
+        response = HttpResponseRedirect(redirect_path)
 
         if not request.GET:
             return response

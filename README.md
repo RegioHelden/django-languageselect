@@ -56,6 +56,5 @@ They can also be executed locally using docker-compose by running `docker-compos
 
 ## Making a new release
 
-[bumpversion](https://github.com/peritus/bumpversion) is used to manage releases.
-
-Add your changes to the HISTORY_ and run `docker-compose run --rm python bumpversion <major|minor|patch>`, then push (including tags)
+This project makes use of [RegioHelden's reusable GitHub workflows](https://github.com/RegioHelden/github-reusable-workflows). \
+Make a new release by manually triggering the `Open release PR` workflow.
