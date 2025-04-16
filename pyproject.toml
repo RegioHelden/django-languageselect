@@ -1,12 +1,18 @@
+# -------------------------------------------
+# Managed by modulesync - DO NOT EDIT
+# -------------------------------------------
+
 [project]
-name = "django_languageselect"
+name = "django-languageselect"
 dynamic = ["version"]
 license = "MIT"
 requires-python = ">=3.11"
 description = "Simple language select as custom template tag"
 readme = "README.md"
 keywords = ["django", "language", "select"]
-authors = [{ name = "Jens Nistler", email = "opensource@jensnistler.de" }]
+authors = [
+    { name = "RegioHelden GmbH", email = "opensource@regiohelden.de" },
+]
 maintainers = [
     { name = "RegioHelden GmbH", email = "opensource@regiohelden.de" },
 ]
@@ -29,7 +35,7 @@ dependencies = ["django>=4.2,<6.0"]
 
 [project.urls]
 Homepage = "https://github.com/RegioHelden/django-languageselect"
-Documentation = "https://github.com/RegioHelden/django-languageselect/blob/master/README.md"
+Documentation = "https://github.com/RegioHelden/django-languageselect/blob/main/README.md"
 Repository = "https://github.com/RegioHelden/django-languageselect.git"
 Issues = "https://github.com/RegioHelden/django-languageselect/issues"
 Changelog = "https://github.com/RegioHelden/django-languageselect/blob/main/CHANGELOG.md"
@@ -57,7 +63,6 @@ exclude = [
     "__pycache",
     "docs",
     "migrations",
-    "rh_django_shared",
     "src",
 ]
 line-length = 120
