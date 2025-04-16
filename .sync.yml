@@ -1,0 +1,7 @@
+---
+:global:
+  module_rootname: "django_languageselect"
+  module_description: "Simple language select as custom template tag"
+  module_keywords: ["django", "language", "select"]
+  dependencies: ["django>=4.2,<6.0"]
+  max_line_length: 120
