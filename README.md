@@ -12,11 +12,11 @@ Simple language select as custom template tag
 
 ## Usage
 
-To use django_languageselect in a project, add it to `INSTALLED_APP`
+To use django_languageselect in a project, add it to `INSTALLED_APPS`
 
 ```python
-INSTALLED_APP  = [
-    *INSTALLED_APP,
+INSTALLED_APPS  = [
+    *INSTALLED_APPS,
     'django_languageselect',
 ]
 ```
@@ -50,7 +50,7 @@ This will render all languages in your `LANGUAGES` setting to select from.
 
 ### Customization
 
-Feel free to use your own template, just add `languageselect/layer.html` to the template folder of an app that is earlier in your `INSTALLED_APP` than `django_languageselect`.
+Feel free to use your own template, just add `languageselect/layer.html` to the template folder of an app that is earlier in your `INSTALLED_APPS` than `django_languageselect`.
 
 ## Tests
 
