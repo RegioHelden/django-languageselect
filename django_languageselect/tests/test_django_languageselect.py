@@ -44,3 +44,6 @@ class TestDjangoLanguageSelect(SimpleTestCase):
             "{% load languageselect %}{% languageselect %}",
         ).render(Context({"request": response.wsgi_request}))
         self.assertIn("django-languageselect-container", out)
+        self.assertIn('<a href="/languageselect?language=de', out)
+        self.assertIn('<a href="/languageselect?language=en', out)
+        self.assertIn('<a href="/languageselect?language=es', out)
