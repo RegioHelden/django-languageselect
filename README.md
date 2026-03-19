@@ -21,11 +21,14 @@ INSTALLED_APP  = [
 ]
 ```
 
-Then add it's endpoint to your `urls.py`. It's important to keep the `languageselect_index` name when using the provided template tag!
+Then add its endpoint to your `urls.py`. It's important to keep the `languageselect_index` name when using the provided template tag!
 
 ```python
+from django.urls import path
+
+from django_languageselect.views import IndexView
+
 urlpatterns = [
-    *urlpatterns,
     path("languageselect", IndexView.as_view(), name="languageselect_index"),
 ]
 ```
