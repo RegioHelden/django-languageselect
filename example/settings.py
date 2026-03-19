@@ -18,4 +18,12 @@ TEMPLATES = [
 
 MIDDLEWARE = global_settings.MIDDLEWARE
 
-ROOT_URLCONF = "django_languageselect.urls"
+ROOT_URLCONF = "example.urls"
+
+LANGUAGES: list[tuple[str, str]] = [
+    ("de", "Deutsch"),
+    ("en", "English"),
+    ("es", "Español"),
+]
+
+LANGUAGE_CODE = "en"

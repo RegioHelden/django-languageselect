@@ -9,29 +9,31 @@ Simple language select as custom template tag
 
 - `"django.middleware.locale.LocaleMiddleware"` in `MIDDLEWARE_CLASSES` / `MIDDLEWARE`
 - `"django.core.context_processors.request"` in `TEMPLATE_CONTEXT_PROCESSORS` / `TEMPLATES['OPTIONS']['context_processors']`
-- Add `"django_languageselect"` to `INSTALLED_APPS`
 
 ## Usage
 
-To use django_languageselect in a project, add it to `INSTALLED_APP`
+To use django_languageselect in a project, add it to `INSTALLED_APPS`
 
 ```python
-INSTALLED_APP  = [
-    *INSTALLED_APP,
+INSTALLED_APPS  = [
+    *INSTALLED_APPS,
     'django_languageselect',
 ]
 ```
 
-Add this to your urls.py
+Then add its endpoint to your `urls.py`. It's important to keep the `languageselect_index` name when using the provided template tag!
 
 ```python
+from django.urls import path
+
+from django_languageselect.views import IndexView
+
 urlpatterns = [
-    *urlpatterns,
-    url(r'^languageselect/', include('django_languageselect.urls')),
+    path("languageselect", IndexView.as_view(), name="languageselect_index"),
 ]
 ```
 
-Use the languageselect tag where you which to show languages list:
+Use the languageselect template tag where you wish to show the language selection:
 
 ```jinja
 {% load languageselect %}
@@ -39,14 +41,16 @@ Use the languageselect tag where you which to show languages list:
 {% languageselect %}
 ```
 
-## Routes
+This will render all languages in your `LANGUAGES` setting to select from.
 
-The only url provided by this application is "languageselect_index". Required GET-parameter is "language", optional GET-parameter is "next". Next contains the named url to redirect after the language change. This parameter is pre-filled with the current page url.
-Customization
+### Parameters
 
-Feel free to use your own template, just add languageselect/layer.html
+* `language` is the only required parameter expecting a two-letter ISO 639 language code.
+* `next` - optionally pass the URL to redirect to after the language has been changed. The template tag redirects to the current URL.
 
-* Free software: MIT license
+### Customization
+
+Feel free to use your own template, just add `languageselect/layer.html` to the template folder of an app that is earlier in your `INSTALLED_APPS` than `django_languageselect`.
 
 ## Tests
 
