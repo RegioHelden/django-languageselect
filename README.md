@@ -42,7 +42,7 @@ This will render all languages in your `LANGUAGES` setting to select from.
 
 ### Parameters
 
-* `language` is the only required parameter expecting a two letter ISO 639 language code.
+* `language` is the only required parameter expecting a two-letter ISO 639 language code.
 * `next` - optionally pass the URL to redirect to after the language has been changed. The template tag redirects to the current URL.
 
 ### Customization
