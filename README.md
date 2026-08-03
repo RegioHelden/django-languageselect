@@ -15,9 +15,9 @@ Simple language select as custom template tag
 To use django_languageselect in a project, add it to `INSTALLED_APPS`
 
 ```python
-INSTALLED_APPS  = [
+INSTALLED_APPS = [
     *INSTALLED_APPS,
-    'django_languageselect',
+    "django_languageselect",
 ]
 ```
 
