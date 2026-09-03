@@ -1,5 +1,53 @@
 # Changelog
 
+## [v8.1.0](https://github.com/RegioHelden/django-languageselect/tree/v8.1.0) (2026-09-03)
+
+[Full Changelog](https://github.com/RegioHelden/django-languageselect/compare/v8.0.0...v8.1.0)
+
+**Implemented enhancements:**
+
+- Add support for Django 6.1 [\#174](https://github.com/RegioHelden/django-languageselect/pull/174) (@lociii)
+
+**Merged pull requests:**
+
+- Update ruff to 0.16.5, ruff VSCode to 2026.76.0, ty to 0.0.78, ty VSCode to 2026.70.0, action setup-uv to 10.0.1 and uv to 0.12.9 [\#173](https://github.com/RegioHelden/django-languageselect/pull/173) (@regiohelden-dev)
+- Update dependency ipython to v9.17.1 [\#172](https://github.com/RegioHelden/django-languageselect/pull/172) (@renovate[bot])
+- Update astral-sh/setup-uv action to v10 [\#171](https://github.com/RegioHelden/django-languageselect/pull/171) (@renovate[bot])
+- Update dependency Django to v6.1.1 [\#170](https://github.com/RegioHelden/django-languageselect/pull/170) (@renovate[bot])
+- Update dependency ipython to v9.16.1 [\#168](https://github.com/RegioHelden/django-languageselect/pull/168) (@renovate[bot])
+- Update astral-sh/setup-uv action to v9 [\#167](https://github.com/RegioHelden/django-languageselect/pull/167) (@renovate[bot])
+- Update actions/setup-python action to v7 [\#166](https://github.com/RegioHelden/django-languageselect/pull/166) (@renovate[bot])
+- Update actions/checkout action to v7.0.1 [\#165](https://github.com/RegioHelden/django-languageselect/pull/165) (@renovate[bot])
+- Library updates, make ssh keys and git config available in devcontainer [\#164](https://github.com/RegioHelden/django-languageselect/pull/164) (@regiohelden-dev)
+- Update dependency Django to v6.0.7 [\#163](https://github.com/RegioHelden/django-languageselect/pull/163) (@renovate[bot])
+- Update git VSCode feature to 1.3.7, ruff to 0.15.20, ruff VSCode to 2026.56.0, ty to 0.0.56, ty VSCode to 2026.60.0, astral-sh/setup-uv to 8.3.0, uv to 0.11.26 [\#161](https://github.com/RegioHelden/django-languageselect/pull/161) (@regiohelden-dev)
+- Update astral-sh/setup-uv action to v8.3.0 [\#160](https://github.com/RegioHelden/django-languageselect/pull/160) (@renovate[bot])
+- Update dependency ipython to v9.15.0 [\#159](https://github.com/RegioHelden/django-languageselect/pull/159) (@renovate[bot])
+- Update ruff to 0.15.19, ty to 0.0.53, actions/setup-python to 6.3.0 and uv to 0.11.24 [\#158](https://github.com/RegioHelden/django-languageselect/pull/158) (@regiohelden-dev)
+- Update actions/setup-python action to v6.3.0 [\#157](https://github.com/RegioHelden/django-languageselect/pull/157) (@renovate[bot])
+- Update ruff to 0.15.18, ruff VSCode to 2026.54.0, ty to 0.0.52, ty VSCode to 2026.58.0 and uv to 0.11.23 [\#156](https://github.com/RegioHelden/django-languageselect/pull/156) (@regiohelden-dev)
+- Update actions/checkout action to v7 [\#155](https://github.com/RegioHelden/django-languageselect/pull/155) (@renovate[bot])
+- Update ty to 0.0.50 [\#154](https://github.com/RegioHelden/django-languageselect/pull/154) (@regiohelden-dev)
+- Update ruff to 0.15.17, ruff VSCode to 2026.52.0, ty to 0.0.49, ty VSCode to 2026.56.0, RegioHelden/github-reusable-workflows to v2.9.0, astral-sh/setup-uv to 8.2.0, uv to 0.11.21 [\#153](https://github.com/RegioHelden/django-languageselect/pull/153) (@regiohelden-dev)
+- Update dependency ipython to v9.14.1 [\#152](https://github.com/RegioHelden/django-languageselect/pull/152) (@renovate[bot])
+- Update astral-sh/setup-uv action to v8.2.0 [\#151](https://github.com/RegioHelden/django-languageselect/pull/151) (@renovate[bot])
+- Update dependency Django to v6.0.6 [\#150](https://github.com/RegioHelden/django-languageselect/pull/150) (@renovate[bot])
+- Pin GitHub actions dependencies [\#149](https://github.com/RegioHelden/django-languageselect/pull/149) (@renovate[bot])
+- Update ty to 0.0.42, ty VSCode to 2026.52.0 and uv to 0.11.18 [\#148](https://github.com/RegioHelden/django-languageselect/pull/148) (@regiohelden-dev)
+- Update dependency ipython to v9.14.0 [\#147](https://github.com/RegioHelden/django-languageselect/pull/147) (@renovate[bot])
+- Update ruff to 0.15.15, ruff VSCode to 2026.46.0, ty to 0.0.40 and uv to 0.11.17 [\#146](https://github.com/RegioHelden/django-languageselect/pull/146) (@regiohelden-dev)
+- Update ruff to 0.15.14, ruff VSCode to 2026.44.0, ty VSCode to 2026.50.0 and uv to 0.11.16 [\#145](https://github.com/RegioHelden/django-languageselect/pull/145) (@regiohelden-dev)
+- Update VSCode common-utils to 2.5.9, ty to 0.0.38, ty VSCode to 2026.48.0 and uv to 0.11.15 [\#144](https://github.com/RegioHelden/django-languageselect/pull/144) (@regiohelden-dev)
+- Update devcontainers/features/common-utils to 2.5.8, ruff to 0.15.13, ruff VSCode to 2026.42.0, ty to 0.0.37, ty VSCode to 2026.46.0 and uv to 0.11.1 [\#143](https://github.com/RegioHelden/django-languageselect/pull/143) (@regiohelden-dev)
+- Update uv to 0.11.11 [\#142](https://github.com/RegioHelden/django-languageselect/pull/142) (@regiohelden-dev)
+- Update dependency Django to v6.0.5 [\#141](https://github.com/RegioHelden/django-languageselect/pull/141) (@renovate[bot])
+- Update ruff to 0.15.12, ty to 0.0.34, ty-VSCode to 2026.44.0 and uv to 0.11.9 [\#140](https://github.com/RegioHelden/django-languageselect/pull/140) (@regiohelden-dev)
+- Update dependency ipython to v9.13.0 [\#139](https://github.com/RegioHelden/django-languageselect/pull/139) (@renovate[bot])
+- Update astral-sh/setup-uv action to v8 [\#138](https://github.com/RegioHelden/django-languageselect/pull/138) (@renovate[bot])
+- Update ty to 0.0.32 and ty VSCode to 2026.40.0 [\#137](https://github.com/RegioHelden/django-languageselect/pull/137) (@regiohelden-dev)
+- Update ty VSCode and setup uv action, pin dependencies [\#136](https://github.com/RegioHelden/django-languageselect/pull/136) (@regiohelden-dev)
+- Update ruff to 0.15.11, ty to 0.0.31 and uv to 0.11.7 [\#134](https://github.com/RegioHelden/django-languageselect/pull/134) (@regiohelden-dev)
+
 ## [v8.0.0](https://github.com/RegioHelden/django-languageselect/tree/v8.0.0) (2026-04-14)
 
 [Full Changelog](https://github.com/RegioHelden/django-languageselect/compare/v7.0.0...v8.0.0)
@@ -8,7 +56,7 @@
 
 - Remove urls.py and extend tests [\#125](https://github.com/RegioHelden/django-languageselect/pull/125) (@lociii)
 
-**Implemented enhancements:**
+**Merged pull requests:**
 
 - Update ruff to 0.15.10, ruff VSCode to 2026.40.0 and uv to 0.11.6 [\#131](https://github.com/RegioHelden/django-languageselect/pull/131) (@regiohelden-dev)
 - Update ruff to 0.15.9, ty to 0.0.29, ty VSCode to 2026.36.0 and uv to 0.11.4 [\#130](https://github.com/RegioHelden/django-languageselect/pull/130) (@regiohelden-dev)
@@ -29,6 +77,7 @@
 - Update ruff to 0.15.1, ty to 0.0.17, ty VSCode to 2026.14.0 and uv to 0.10.2 [\#113](https://github.com/RegioHelden/django-languageselect/pull/113) (@regiohelden-dev)
 - Update ruff to 0.15.0, ruff VSCode to 2026.36.0, ty to 0.0.15, ty VSCode to 2026.10.0 and uv to 0.10.0 [\#112](https://github.com/RegioHelden/django-languageselect/pull/112) (@regiohelden-dev)
 - Update uv to 0.9.29 [\#111](https://github.com/RegioHelden/django-languageselect/pull/111) (@regiohelden-dev)
+- Update dependency Django to v6.0.2 \[SECURITY\] - autoclosed [\#110](https://github.com/RegioHelden/django-languageselect/pull/110) (@renovate[bot])
 - Update dependency ipython to v9.10.0 [\#109](https://github.com/RegioHelden/django-languageselect/pull/109) (@renovate[bot])
 - Update uv to 0.9.28 [\#108](https://github.com/RegioHelden/django-languageselect/pull/108) (@regiohelden-dev)
 - Update ty to 0.0.14 and ty VSCode extension to 2026.8.0 [\#107](https://github.com/RegioHelden/django-languageselect/pull/107) (@regiohelden-dev)
@@ -41,10 +90,6 @@
 - Update ruff to 0.14.13 and uv to 0.9.26 [\#100](https://github.com/RegioHelden/django-languageselect/pull/100) (@regiohelden-dev)
 - Update ruff to 0.14.11 and ruff VSCode to 2026.34.0 [\#99](https://github.com/RegioHelden/django-languageselect/pull/99) (@regiohelden-dev)
 
-**Merged pull requests:**
-
-- Update dependency Django to v6.0.2 \[SECURITY\] - autoclosed [\#110](https://github.com/RegioHelden/django-languageselect/pull/110) (@renovate[bot])
-
 ## [v7.0.0](https://github.com/RegioHelden/django-languageselect/tree/v7.0.0) (2026-01-07)
 
 [Full Changelog](https://github.com/RegioHelden/django-languageselect/compare/v6.0.0...v7.0.0)
@@ -53,7 +98,7 @@
 
 - Add support for Django 6.0 release, add support for Python 3.14, remove support for EOL Django  5.1 [\#96](https://github.com/RegioHelden/django-languageselect/pull/96) (@lociii)
 
-**Implemented enhancements:**
+**Merged pull requests:**
 
 - Update ruff to 0.14.10, update uv to 0.9.22, allow installation on Django 6.0 [\#97](https://github.com/RegioHelden/django-languageselect/pull/97) (@regiohelden-dev)
 - Update ruff to 0.14.9, ruff VSCode to 2025.32.0, github-reusable-workflows to 2.8.0, download-artifact to 7, uv to 0.9.17 [\#95](https://github.com/RegioHelden/django-languageselect/pull/95) (@regiohelden-dev)
@@ -96,12 +141,6 @@
 - Update uv to 0.8.13 [\#56](https://github.com/RegioHelden/django-languageselect/pull/56) (@regiohelden-dev)
 - Update uv to 0.8.12 and reusable workflows to 2.3.0 [\#55](https://github.com/RegioHelden/django-languageselect/pull/55) (@regiohelden-dev)
 - Update uv to 0.8.3 [\#54](https://github.com/RegioHelden/django-languageselect/pull/54) (@regiohelden-dev)
-- Update reusable workflows [\#44](https://github.com/RegioHelden/django-languageselect/pull/44) (@lociii)
-- Bump django from 5.2.1 to 5.2.2 [\#40](https://github.com/RegioHelden/django-languageselect/pull/40) (@dependabot[bot])
-- Bump django from 5.2 to 5.2.1 [\#33](https://github.com/RegioHelden/django-languageselect/pull/33) (@dependabot[bot])
-
-**Merged pull requests:**
-
 - Update uv to 0.8.2 [\#53](https://github.com/RegioHelden/django-languageselect/pull/53) (@regiohelden-dev)
 - Update uv to 0.8.0 [\#52](https://github.com/RegioHelden/django-languageselect/pull/52) (@regiohelden-dev)
 - Update uv to 0.7.21 [\#51](https://github.com/RegioHelden/django-languageselect/pull/51) (@regiohelden-dev)
@@ -111,15 +150,18 @@
 - Update uv to 0.7.15 [\#47](https://github.com/RegioHelden/django-languageselect/pull/47) (@regiohelden-dev)
 - Updates GitHub reusable workflows to 2.2.4 [\#46](https://github.com/RegioHelden/django-languageselect/pull/46) (@regiohelden-dev)
 - Update uv to 0.7.14 [\#45](https://github.com/RegioHelden/django-languageselect/pull/45) (@regiohelden-dev)
+- Update reusable workflows [\#44](https://github.com/RegioHelden/django-languageselect/pull/44) (@lociii)
 - Updates ruff VSCode integration to 2025.24.0 [\#43](https://github.com/RegioHelden/django-languageselect/pull/43) (@regiohelden-dev)
 - Update uv to 0.7.13 [\#42](https://github.com/RegioHelden/django-languageselect/pull/42) (@regiohelden-dev)
 - Update uv to 0.7.12 [\#41](https://github.com/RegioHelden/django-languageselect/pull/41) (@regiohelden-dev)
+- Bump django from 5.2.1 to 5.2.2 [\#40](https://github.com/RegioHelden/django-languageselect/pull/40) (@dependabot[bot])
 - Update uv to 0.7.11 [\#39](https://github.com/RegioHelden/django-languageselect/pull/39) (@regiohelden-dev)
 - Update uv to 0.7.8 [\#38](https://github.com/RegioHelden/django-languageselect/pull/38) (@regiohelden-dev)
 - Update uv to 0.7.7 [\#37](https://github.com/RegioHelden/django-languageselect/pull/37) (@regiohelden-dev)
 - Update uv to 0.7.6 [\#36](https://github.com/RegioHelden/django-languageselect/pull/36) (@regiohelden-dev)
 - Update uv to 0.7.5 [\#35](https://github.com/RegioHelden/django-languageselect/pull/35) (@regiohelden-dev)
 - Update uv to 0.7.4 [\#34](https://github.com/RegioHelden/django-languageselect/pull/34) (@regiohelden-dev)
+- Bump django from 5.2 to 5.2.1 [\#33](https://github.com/RegioHelden/django-languageselect/pull/33) (@dependabot[bot])
 - Update uv to 0.7.3 [\#32](https://github.com/RegioHelden/django-languageselect/pull/32) (@regiohelden-dev)
 - Updates from modulesync [\#31](https://github.com/RegioHelden/django-languageselect/pull/31) (@regiohelden-dev)
 - Updates from modulesync [\#30](https://github.com/RegioHelden/django-languageselect/pull/30) (@regiohelden-dev)
